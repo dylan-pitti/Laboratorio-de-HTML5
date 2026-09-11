@@ -1,39 +1,37 @@
 # Lab1 - Introducción a PHP
  
-Primera práctica de introducción al lenguaje PHP, realizada por **Gabriel Mendoza**. El repositorio reúne una serie de ejercicios básicos que cubren formularios HTML, procesamiento de datos en el servidor, operaciones matemáticas y conversión de unidades usando PHP.
+Repositorio para la entrega del Laboratorio: Laboratorio de HTML5. Creado y desarrollado por Dylan Pitti del salón 1S3122
  
-## 📋 Descripción
  
-Es un laboratorio enfocado en los fundamentos de PHP: sintaxis básica, variables, formularios `POST`, condicionales y operaciones aritméticas simples. Cada archivo `.php` representa un ejercicio independiente.
- 
-## 📁 Estructura del repositorio
+Es un laboratorio enfocado en los fundamentos de HTML5 como las tablas y los párrafos, también incluyendo los selectores y CSS.
+## Contenidos del Repositorio
  
 | Archivo | Descripción |
 |---|---|
-| `calculadora.php` | Formulario HTML para ingresar dos números y seleccionar una operación (sumar, restar, multiplicar, redondear). |
-| `calc.php` | Procesa los datos enviados por `calculadora.php` y muestra el resultado de la operación seleccionada. |
-| `edad.php` | Ejercicio para calcular o mostrar la edad a partir de datos ingresados por el usuario. |
-| `pagina2.php` | Página de ejemplo/complementaria dentro de la práctica. |
-| `practica1.php` | Primer ejercicio de práctica con PHP. |
-| `practica2.php` | Segundo ejercicio de práctica con PHP. |
-| `practica3.php` | Tercer ejercicio de práctica con PHP. |
-| `practica4.php` | Cuarto ejercicio de práctica con PHP. |
-| `practica4.c` | Versión en lenguaje C del ejercicio de la práctica 4 (comparación entre lenguajes). |
-| `pulg.php` / `pulgada.php` | Conversión de unidades (pulgadas a otras medidas). |
-| `pulgesti.css` | Hoja de estilos usada por los ejercicios de conversión de pulgadas. |
- 
-## 🛠️ Tecnologías utilizadas
- 
-- **PHP** – lógica del lado del servidor
-- **HTML** – estructura de los formularios y páginas
-- **CSS** – estilos básicos
-- **C** – archivo comparativo en `practica4.c`
+| `Ejemplo1.HTML` | Ejercicio para practicar tablas sencillas en HTML. |
+| `EstilosTabla1.css` | Hoja de estilos usada para el ejemplo 1. |
+| `Ejemplo2.HTML` |  Ejercicio para continuar con la práctica de tablas sencillas en HTML.|
+| `EstilosTabla.css` | Hoja de estilos usada para el ejemplo 2 |
+| `Ejemplo3.HTML` | Aqui se practican el uso de los párrafos en forma de negrita y cambio de estilo de letra.|
+| `EstilosParrafos.css` | Hoja de estilos usada para el ejemplo 3. |
+| `Ejemplo4.HTML` | Práctica que cuenta con un hipervínculo propio para redirigir a una página de Wikipedia sobre PHP. |
+| `Ejemplo5.HTML` | Página sencilla mostrando hipervínculos que dirigen a la misma página, pero a distintas partes de esta. |
+| `Selectores.HTML` | Todos los ejercicios de selectores, unidos en uno solo. |
 
-## 📌 Requisitos
+
+
  
-- PHP 7.4 o superior
-- Un servidor local (XAMPP, WAMP, MAMP) o el servidor embebido de PHP
-##  Autor
+## Lenguajes Utilizados
  
-**Gabriel Mendoza**
-Práctica realizada como parte de la introducción al lenguaje PHP.
+- **HTML** 
+- **CSS** 
+
+##  Cómo ejecutar el proyecto
+ 
+1. Clonar el repositorio:
+```bash
+   git clone https://github.com/dylan-pitti/-Laboratorio-de-HTML5.git
+```
+2. Colocarlo dentro del directorio de tu servidor local (www si se usa WAMP o LAMP).
+3. Iniciar Wamp o Lamp después conectarse al servidor local mediante hhtp://127.1.1.1
+4. Elegir el archivo a probar dentro de la carpeta asignada-
