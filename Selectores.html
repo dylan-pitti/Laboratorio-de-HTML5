@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de Selectores CSS</title>
+    <style>
+        /* 1. Selector Universal (*)
+           Afecta a todos los elementos del documento salvo que un selector más específico lo reescriba */
+        * {
+            /* background-color: #ffc; */ /* Comentado para evitar opacar los demás ejemplos */
+            box-sizing: border-border-box;
+        }
+
+        /* Configuración base de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+            line-height: 1.6;
+        }
+
+        /* 2. Selector de Tipo / Etiqueta
+           Afecta a todos los elementos de un determinado tipo (ej. <p>) */
+        p {
+            background-color: #ffc;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        /* 3. Selector de Clase (.attention)
+           Aplica a cualquier elemento que tenga class="attention" */
+        .attention {
+            background-color: #ffc;
+            padding: 6px;
+        }
+
+        /* 3.1 Selector de Clase Restringido por Elemento (li.attention)
+           Solo afecta a los <li> que tengan la clase attention */
+        li.attention {
+            background-color: #ffc;
+            font-weight: bold;
+        }
+
+        /* 4. Selector de ID (#offers o h2#offers)
+           Aplica únicamente al elemento con id="offers" (debe ser único) */
+        h2#offers {
+            border-bottom: 2px solid orange;
+            color: #333;
+            background-color: #ffc;
+        }
+
+        /* 5. Selector Descendiente (p strong)
+           Afecta a cualquier <strong> dentro de un <p>, sin importar el nivel de anidación */
+        p strong {
+            color: #d9534f;
+            font-family: "Trebuchet MS", Arial;
+            font-size: 14px;
+        }
+
+        /* 6. Selector Hijo Directo (p > strong)
+           Solo aplica si el <strong> es hijo inmediato de un <p> */
+        div.ejemplo-hijo > p > strong {
+            background-color: #ffc;
+            border: 1px dashed #d9534f;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Demostración de Selectores CSS</h1>
+
+    <!-- Ejemplo de Selector de ID -->
+    <h2 id="offers">Ofertas Especiales (Selector ID: h2#offers)</h2>
+
+    <!-- Ejemplo de Selector de Tipo / Etiqueta -->
+    <section>
+        <h3>Selector de Tipo (p)</h3>
+        <p>Este párrafo recibe un fondo amarillo pálido debido al selector de tipo <code>p</code>.</p>
+    </section>
+
+    <!-- Ejemplo de Selector de Clase -->
+    <section>
+        <h3>Selector de Clase (.attention y li.attention)</h3>
+        <ul>
+            <li>Elemento de lista normal</li>
+            <li class="attention">Elemento con aviso importante (li.attention)</li>
+            <li>Otro elemento normal</li>
+        </ul>
+        <div class="attention">
+            Este es un contenedor <code>&lt;div&gt;</code> que también usa la clase <code>.attention</code>.
+        </div>
+    </section>
+
+    <!-- Ejemplo de Selector Descendiente -->
+    <section>
+        <h3>Selector Descendiente (p strong)</h3>
+        <p>
+            Jon dijo: <q>Estará bien cuando esté <strong>terminado</strong>.</q> 
+            ¡Si tan solo <span><strong>supiera</strong></span>!
+        </p>
+    </section>
+
+    <!-- Ejemplo de Selector Hijo Directo -->
+    <section class="ejemplo-hijo">
+        <h3>Selector Hijo Directo (p &gt; strong)</h3>
+        <p>
+            Este <strong>es un hijo directo</strong> de &lt;p&gt; (aplica regla).
+            <span>
+                Este <strong>está dentro de un span</strong> (no es hijo directo de &lt;p&gt;).
+            </span>
+        </p>
+    </section>
+
+</body>
+</html>
