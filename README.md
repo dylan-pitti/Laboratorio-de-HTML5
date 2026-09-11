@@ -1,4 +1,4 @@
-# Lab1 - Introducción a PHP
+# Lab2 - Laboratorio-de-HTML5
  
 Repositorio para la entrega del Laboratorio: Laboratorio de HTML5. Creado y desarrollado por Dylan Pitti del salón 1S3122
  
